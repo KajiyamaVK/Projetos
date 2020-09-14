@@ -1,0 +1,12 @@
+{
+  "name": "Fidelity",
+  "displayName": "Fidelity",
+  "expo": {
+    "name": "Fidelity",
+    "slug": "Fidelity",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
