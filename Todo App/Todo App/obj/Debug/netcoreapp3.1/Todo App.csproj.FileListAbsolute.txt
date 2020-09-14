@@ -1,0 +1,27 @@
+C:\Rep\Projetos\Todo App\Todo App\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Rep\Projetos\Todo App\Todo App\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Rep\Projetos\Todo App\Todo App\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Rep\Projetos\Todo App\Todo App\bin\Debug\netcoreapp3.1\Todo App.exe
+C:\Rep\Projetos\Todo App\Todo App\obj\Debug\netcoreapp3.1\Todo App.csprojAssemblyReference.cache
+C:\Rep\Projetos\Todo App\Todo App\obj\Debug\netcoreapp3.1\Todo App.AssemblyInfoInputs.cache
+C:\Rep\Projetos\Todo App\Todo App\obj\Debug\netcoreapp3.1\Todo App.AssemblyInfo.cs
+C:\Rep\Projetos\Todo App\Todo App\obj\Debug\netcoreapp3.1\Todo App.RazorTargetAssemblyInfo.cache
+C:\Rep\Projetos\Todo App\Todo App\obj\Debug\netcoreapp3.1\staticwebassets\Todo App.StaticWebAssets.Manifest.cache
+C:\Rep\Projetos\Todo App\Todo App\obj\Debug\netcoreapp3.1\staticwebassets\Todo App.StaticWebAssets.xml
+C:\Rep\Projetos\Todo App\Todo App\bin\Debug\netcoreapp3.1\Todo App.deps.json
+C:\Rep\Projetos\Todo App\Todo App\bin\Debug\netcoreapp3.1\Todo App.runtimeconfig.json
+C:\Rep\Projetos\Todo App\Todo App\bin\Debug\netcoreapp3.1\Todo App.runtimeconfig.dev.json
+C:\Rep\Projetos\Todo App\Todo App\bin\Debug\netcoreapp3.1\Todo App.dll
+C:\Rep\Projetos\Todo App\Todo App\bin\Debug\netcoreapp3.1\Todo App.pdb
+C:\Rep\Projetos\Todo App\Todo App\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Rep\Projetos\Todo App\Todo App\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Rep\Projetos\Todo App\Todo App\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Rep\Projetos\Todo App\Todo App\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Rep\Projetos\Todo App\Todo App\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Rep\Projetos\Todo App\Todo App\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Rep\Projetos\Todo App\Todo App\obj\Debug\netcoreapp3.1\Todo App.csproj.CoreCompileInputs.cache
+C:\Rep\Projetos\Todo App\Todo App\obj\Debug\netcoreapp3.1\Todo App.MvcApplicationPartsAssemblyInfo.cache
+C:\Rep\Projetos\Todo App\Todo App\obj\Debug\netcoreapp3.1\Todo App.csproj.CopyComplete
+C:\Rep\Projetos\Todo App\Todo App\obj\Debug\netcoreapp3.1\Todo App.dll
+C:\Rep\Projetos\Todo App\Todo App\obj\Debug\netcoreapp3.1\Todo App.pdb
+C:\Rep\Projetos\Todo App\Todo App\obj\Debug\netcoreapp3.1\Todo App.genruntimeconfig.cache
