@@ -1,9 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {View,TextInput,Button,Text} from 'react-native'
 import {Formik} from 'formik'
 import style from './stylesheet'
 import { FontAwesome5 } from '@expo/vector-icons';
 import Data from '../Data'
+import ClientsRegisterSchema from './inputSchema'
 
 
 export default function ClientsRegister(){
@@ -15,6 +16,7 @@ export default function ClientsRegister(){
             <FontAwesome5 name='users' size={100} color='darkblue' style={style.icon}/>
             <Formik
                 initialValues= {{name:'', CPF:'', Telefone:''}}
+                validationSchema = {ClientsRegisterSchema}
                 onSubmit={(values,{resetForm})=>{
                     Data.push(values);
                     resetForm({value:''})
@@ -29,8 +31,10 @@ export default function ClientsRegister(){
                             onChangeText={props.handleChange('name')}
                             value={props.values.name}
                             style={style.input}
-                            
+                            validationSchema={ClientsRegisterSchema}
+                            onBlur={props.handleBlur('name')}
                         />
+                        <Text>{props.touched.name && props.errors.name}</Text>
                      
                         <TextInput
                             placeholder="CPF"
@@ -38,7 +42,11 @@ export default function ClientsRegister(){
                             value={props.values.CPF}
                             style={style.input}
                             keyboardType='numeric'
+                            validationSchema={ClientsRegisterSchema}
+                            onBlur={props.handleBlur('CPF')}
                         />
+                        <Text>{props.touched.CPF && props.errors.CPF}</Text>
+                        
                      
                         <TextInput
                             placeholder="Telefone Celular com DDD"
@@ -46,7 +54,12 @@ export default function ClientsRegister(){
                             value={props.values.Telefone}
                             style={style.input}
                             keyboardType='numeric'
+                            validationSchema={ClientsRegisterSchema}
+                            onBlur={props.handleBlur('Telefone')}
                         />
+                        <Text>{props.touched.Telefone && props.errors.Telefone}</Text>
+                        
+                    
                       
                         <Button title='Gravar' color='darkblue' onPress={props.handleSubmit}/>
                     </View>
