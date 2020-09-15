@@ -5,7 +5,7 @@ import style from './stylesheet'
 import SearchBar from "react-native-dynamic-search-bar";
 import Data, {Test} from "../Data"
 import { Button } from 'react-native';
-
+import {StyleSheet} from 'react-native'
 
 
 export default function Search({ navigation }) {
@@ -15,6 +15,7 @@ export default function Search({ navigation }) {
   const [activeSections,updateActiveSections] = useState([])
   const [multiSelect,updateMultiSelect] = useState(false)
   const [Clients, updateClients] = useState(Data)
+  const [ClientsPoint, updateClientsPoint] = useState([])
 
   React.useEffect(() => {
     const unsubscribe = navigation.addListener('focus', () => {
@@ -27,14 +28,14 @@ export default function Search({ navigation }) {
     return unsubscribe;
   }, []);
  
+  const _updateSections = section => {
 
-  const Reset=()=>{
-    updateActiveSections([])
-  }
-
+    updateActiveSections(section)
+  };
+  
   const _renderHeader = section => {
       return (
-        <View>
+        <View style={style.DataHeader}>
           <Text>
       <Text style={style.name}>{section.name}</Text> 
           </Text>
@@ -45,9 +46,9 @@ export default function Search({ navigation }) {
 
   const _renderData = section => {
     return (
-      <View>
+      <View style={style.accordion}>
         <Text>
-        <Text style={style.DataTitle}>Pontos:</Text> {section.Pontos}
+    <Text style={style.DataTitle}>Pontos:</Text> {section.Pontos}
         </Text>
         <Text>
           <Text style={style.DataTitle}>CPF:</Text> {section.CPF}
@@ -55,14 +56,20 @@ export default function Search({ navigation }) {
         <Text>
           <Text style={style.DataTitle}>Tel:.</Text>{section.Telefone}
         </Text>
+        <View style={style.buttons}>
+          <Button title="Adicionar" onPress={()=>{section.Pontos=parseInt(section.Pontos)+1; updateActiveSections([]);}}/>
+          <Button title="Retirar" onPress={()=>_updateSections}/>
+          <Button title="Editar"/>
+        </View>
       </View>
     );
   };
 
-  const _updateSections = section => {
-    updateActiveSections(section)
-  };
-  
+  const AddPoint = (section) =>{
+    console.log(section.Pontos)
+  }
+
+
 
 
 
@@ -108,7 +115,7 @@ export default function Search({ navigation }) {
         }}
         onPress={()=> {filterList("")}}
       />
-       <View style={style.accordion}>
+       <View>
         <Accordion
             sections={Clients}
             activeSections={activeSections}

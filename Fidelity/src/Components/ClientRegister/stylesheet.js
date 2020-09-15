@@ -23,6 +23,10 @@ const style= StyleSheet.create({
 
     icon:{
         textAlign:'center'
+    },
+
+    error:{
+        color:"red"
     }
 })
 

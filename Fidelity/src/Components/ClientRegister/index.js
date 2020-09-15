@@ -34,7 +34,7 @@ export default function ClientsRegister(){
                             validationSchema={ClientsRegisterSchema}
                             onBlur={props.handleBlur('name')}
                         />
-                        <Text>{props.touched.name && props.errors.name}</Text>
+                        <Text style={style.error}>{props.touched.name && props.errors.name}</Text>
                      
                         <TextInput
                             placeholder="CPF"
@@ -45,7 +45,7 @@ export default function ClientsRegister(){
                             validationSchema={ClientsRegisterSchema}
                             onBlur={props.handleBlur('CPF')}
                         />
-                        <Text>{props.touched.CPF && props.errors.CPF}</Text>
+                        <Text style={style.error}>{props.touched.CPF && props.errors.CPF}</Text>
                         
                      
                         <TextInput
@@ -57,7 +57,7 @@ export default function ClientsRegister(){
                             validationSchema={ClientsRegisterSchema}
                             onBlur={props.handleBlur('Telefone')}
                         />
-                        <Text>{props.touched.Telefone && props.errors.Telefone}</Text>
+                        <Text style={style.error}>{props.touched.Telefone && props.errors.Telefone}</Text>
                         
                     
                       
