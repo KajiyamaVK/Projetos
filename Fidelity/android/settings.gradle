@@ -1,4 +1,8 @@
 rootProject.name = 'Fidelity'
+include ':react-native-styled-dialogs'
+project(':react-native-styled-dialogs').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-styled-dialogs/android')
+include ':react-native-styled-dialogs'
+project(':react-native-styled-dialogs').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-styled-dialogs/android')
 
 apply from: '../node_modules/react-native-unimodules/gradle.groovy'
 includeUnimodulesProjects()

@@ -33,6 +33,7 @@
     "react-native-safe-area-context": "^3.0.2",
     "react-native-screens": "^2.9.0",
     "react-native-spinkit": "^1.5.0",
+    "react-native-styled-dialogs": "^1.0.0",
     "react-native-tab-view": "^2.15.1",
     "react-native-text-input-mask": "^2.0.0",
     "react-native-unimodules": "~0.10.1",
